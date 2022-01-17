@@ -16,6 +16,82 @@ Es una aplicación  que permite programar diversas placas de desarrollo Arduino:
 4.	Barra de acceso=>	Permite compilar y cargar el código.
 5.	Barra de Ubicación=>	Tipo de Arduino conectado y el puerto de comunicación.
 
+
+### Partes del steck 
+
+1.	Descripción del programa: Para reutilización de código, es necesario presentar una breve descripción del programa y su funcionalidad . 
+2.	 Librerías : Son líneas de código ya construidas para el uso de ciertos aspectos de Arduino para una mayor facilidad y se llaman a estos subprogramas como métodos o subrutinas.
+3.	Variables : Es un espacio de memoria donde se almacenan datos, se forma temporal o fija, dependiendo del tipo de dato se debe elegir la variable a usar, además de ellos es necesario primero declarar la variable con un nombre que la represente, pero si puede tener varios datos contenidos en una misma variable . 
+4.	 Void Setup : Es el lugar donde configuramos al Arduino sobre que pines y como vamos a usar, en cada tema de programación observamos la forma de configurar correctamente .
+5.	 Void Loop : Es un espacio de programa que se repetirá infinitas veces hasta que alguna variable cambie de estado o se desconecte de la fuente, es donde irá el programa que dará el accionamiento al Arduino . 
+6.	 Void rutina : Rutinas de programación fuera del programa principal
+
+
+### Entrada-Salidas 
+Digitales de Proposito general
+
+* Las placas de arduino tienen 14
+terminales de salida digital de
+propósito general. Cada terminal
+esta representada por un
+identificador numérico.
+Este identificador es utilizado para
+utilizar cada una de las terminales
+durante la programación del
+dispositivo.
+
+
+### MANEJO DE VARIABLES DE NÚMEROS 
+ 
+ * Las variables son espacios de memoria del micro
+para almacenar datos temporales y que en el
+tiempo de ejecución cambia de valor.
+
+1. int           => Tipo de Dato 
+2. led           => Nombre de la Variable 
+3. =8            => Asignación del Valor 
+4. ;             => Fin de Linea de Codigo
+
+
+### MANEJO DE CONSTANTES
+
+No cambian su valor en tiempo de ejecución. Son
+útiles para prevenir que no se tenga errores.
+
+#define
+
+* Ventajas
+
+No ocupa memoria para almacenar las constantes,
+puesto que son remplazadas por sus valores
+Si se usa en proyecto pequeños, como definir un
+pin, una cadena, etcétera, es adecuado.
+
+* Desventajas
+
+No tienen tipo. Por lo que el compilador no podrá
+avisar si algo esta mal
+Son globales, por lo que se debe ser sumamente
+cuidadosos al referirse a ellas.
+
+### MANEJO DE CONSTANTES
+
+Const
+
+* Ventajas
+Obedecen el ámbito de las funciones. Es
+decir, se puede declarar dos constantes
+con el mismo nombre en
+diferentes funciones
+También tiene la ventaja de que tiene tipo,
+por lo que el compilador nos informará los
+errores que puede que estemos
+cometiendo.
+const también permite declarar arreglos,
+que #define no
+
+
+
 ### Bibliotecas de Arduino
 
 
